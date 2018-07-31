@@ -1,0 +1,32 @@
+/*Developer : Krishnasis Mandal
+/*Language : HTML, CSS, Javascript, JQuery
+/*Date : 24-08-2017
+/*Dependecies : JQuery
+
+
+Include this in your head tag : 
+-------------------------------
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+--------------------------------------------------------------------
+Not needed if jquery is already imported. Check by pasting the code below in your website.
+If nothing appears, please add this line of code.
+
+
+Include this anywhere within <body></body> : 
+------------------------------------
+
+<div id = "adnet-ad-placement-banner" class = "adnet-ad-placement-banner" style="display=block; height: 100%; width: 80%; margin:20px;">
+	<script>
+		$.get("banner.php?api=1234", function(response)
+		 { 
+    		document.getElementById('adnet-ad-placement-banner').innerHTML = response; 
+	});
+	</script>
+</div>
+
+----------------------------
+api=YOUR_API_ID_HERE (which will be automatically generated. :))
+-----------------------------------------------------------------------------
+Enclose this within <center></center> tags if you want the ad to be centered.
+-----------------------------------------------------------------------------

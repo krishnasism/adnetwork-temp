@@ -1,0 +1,23 @@
+RewriteEngine On
+
+RewriteRule ^dashboard?$ app/dashboard.php
+RewriteRule ^account?$ app/account.php
+RewriteRule ^discover?$ app/discover.php
+RewriteRule ^index?$ index.php
+RewriteRule ^login?$ app/login.php
+RewriteRule ^register?$ app/register.php
+RewriteRule ^logout?$ app/logout.php
+RewriteRule ^developers?$ app/developers.php
+RewriteRule ^createad?$ app/createad.php
+
+RewriteRule ^appshop/([0-9a-zA-Z]+) app/appshop.php?name=$1
+RewriteRule ^adverts app/index.php
+
+RewriteRule ^classes index.php
+
+RewriteRule ^([^/\.]+)/?$ app/generatesite.php?uri=$1 [L,QSA]
+
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php [QSA,L]

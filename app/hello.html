@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8"/>
+
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+        <title>Account</title>
+
+    </head>
+
+    <body>
+ <center>
+<div id = "adnet-ad-placement-banner" class = "adnet-ad-placement-banner" style="display=block; height: 100%; width: 80%; margin:20px;">
+	<script>
+		$.get("banner.php?api=9221d3b4854096a20fad07f6cb4285e9", function(response)
+		 {
+    		document.getElementById('adnet-ad-placement-banner').innerHTML = response;
+	});
+	</script>
+</div>
+</center>
+
+    </body>
+   </html>

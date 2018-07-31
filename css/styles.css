@@ -1,0 +1,20 @@
+.container
+{
+    /* center contents */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+main .form-control
+{
+    /* center form controls */
+    display: inline-grid;
+    width: auto;
+}
+
+body
+{
+    overflow-y: scroll;
+    width: 100%;
+    overflow-x: hidden;
+}

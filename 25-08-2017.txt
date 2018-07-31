@@ -1,0 +1,8 @@
+First Commit to github. Basic layout and architecture is ready(?).
+
+1> Working Login-Registration System. Implemented OOP instead of procedural, to make app more structured.
+2> Working ad analytics. Need to do processing on organic clicks. <<Detect Spam, self-clicks,etc.>>
+3> Basic Bootstrap Layout. Need to change it.
+4> Ad fetching is working. Clicks and eyeballs also working.
+5> Relational tables are implemented. Ads and Users are referenced via uid and adid from various tables.
+6> Preliminary code made for blog/website integration and android app integration.
